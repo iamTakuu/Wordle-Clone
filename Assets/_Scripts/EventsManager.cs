@@ -14,4 +14,7 @@ public class EventsManager : MonoBehaviour
 
     public event Action StartGame;
     public void OnGameStart() => StartGame?.Invoke();
+
+    public event Action Wipe;
+    public void OnWipe() => Wipe?.Invoke();
 }
