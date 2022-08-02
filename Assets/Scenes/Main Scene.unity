@@ -1977,7 +1977,7 @@ MonoBehaviour:
   inputIMG: {fileID: 86723381}
   rulesPanel: {fileID: 297119997}
   attemptsText: {fileID: 734532887}
-  dubText: {fileID: 0}
+  dubText: {fileID: 1580091816}
   wordList: []
 --- !u!4 &1419418589
 Transform:
