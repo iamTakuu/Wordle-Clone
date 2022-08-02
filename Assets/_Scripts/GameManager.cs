@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image inputIMG;
     [SerializeField] private GameObject rulesPanel;
     [SerializeField] private TextMeshProUGUI attemptsText;
+    [SerializeField] private TextMeshProUGUI dubText;
     private string randomWord;
     private string userInput;
     private int attempts;
@@ -117,6 +118,7 @@ public class GameManager : MonoBehaviour
         else
         {
             AnimateRight();
+            dubText.transform.DOPunchScale(new Vector3(0.5f, 0.5f, 0), 1f, 1, 0.2f).SetEase(Ease.InBounce).OnComplete((() => dubText.transform.DOScale(Vector3.zero, 0.2f).SetEase(Ease.InOutBounce)));
             ResetGame(true);
         }
         
